@@ -1,0 +1,29 @@
+{
+    "github_token": "",
+    "source_owner": "duncte123",
+    "target_owner": "dunctes-archive",
+    "repositories": [
+        "apis-wrapper",
+        "ctrl-f-u",
+        "ghostbot-website",
+        "dshelmondgames-vue",
+        "SupermarktConnector",
+        "melijn-files",
+        "virtualizor-bandwidth-all",
+        "leeks",
+        "GhostBotSlack",
+        "dshelmondgames",
+        "betterplaylists",
+        "Boats4J",
+        "vueshit",
+        "oauth-bridge-template",
+        "Melijn",
+        "mcstatus",
+        "Discord_Fork",
+        "fuzzy-memory",
+        "wikia-custom-domain",
+        "Emote-scraper",
+        "mediawiki-school",
+        "chatter-bot-api"
+    ]
+}

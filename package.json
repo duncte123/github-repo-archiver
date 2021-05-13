@@ -1,0 +1,13 @@
+{
+  "name": "github-repo-archiver",
+  "version": "1.0.0",
+  "description": "A tool to archive a mass amout of repositories to my archive organisation",
+  "main": "src/index.js",
+  "repository": "https://github.com/duncte123/github-repo-archiver",
+  "author": "duncte123",
+  "license": "GPL-3.0",
+  "private": false,
+  "dependencies": {
+    "@octokit/core": "^3.4.0"
+  }
+}
