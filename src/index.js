@@ -17,13 +17,18 @@ async function moveAllRepos() {
 
 async function archiveAllRepos() {
     for (const repo of config.repositories) {
-        console.log(`Archiving ${config.target_owner}/${repo}...`);
-        await octokit.request('PATCH /repos/{owner}/{repo}', {
-            owner: config.target_owner,
-            repo,
-            archived: true
-        });
-        console.log(`Archived ${config.target_owner}/${repo}!`);
+        try {
+            console.log(`Archiving ${config.target_owner}/${repo}...`);
+            await octokit.request('PATCH /repos/{owner}/{repo}', {
+                owner: config.target_owner,
+                repo,
+                archived: true
+            });
+            console.log(`Archived ${config.target_owner}/${repo}!`);
+        } catch (e) {
+            console.log(`Failed to archive ${config.target_owner}/${repo}`);
+            console.error(e);
+        }
     }
 }
 
